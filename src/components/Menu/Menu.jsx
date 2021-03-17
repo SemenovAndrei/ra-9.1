@@ -1,25 +1,27 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 
-function Menu(props) {
+function Menu() {
   return (
-    <nav class="menu">
-      <a class="menu__item" href="/">
+    <nav className="menu">
+      <NavLink to="/" className="menu__item" activeClassName="menu__item-active" exact>
         Главная
-      </a>
-      <a class="menu__item" href="/drift">
+      </NavLink>
+      <NavLink to="/drift" className="menu__item" activeClassName="menu__item-active">
         Дрифт-такси
-      </a>
-      <a class="menu__item" href="/timeattack">
+      </NavLink>
+      <NavLink
+        to="/timeattack"
+        className="menu__item"
+        activeClassName="menu__item-active"
+      >
         Time Attack
-      </a>
-      <a class="menu__item" href="/forza">
+      </NavLink>
+      <NavLink to="/forza" className="menu__item" activeClassName="menu__item-active">
         Forza Karting
-      </a>
+      </NavLink>
     </nav>
   )
 }
-
-Menu.propTypes = {}
 
 export default Menu

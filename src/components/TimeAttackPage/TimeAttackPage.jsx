@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-function TimeAttackPage(props) {
+function TimeAttackPage() {
   return (
     <article className="article">
       <h1 className="article__title">Гонка ​​​​​​Time Attack</h1>
@@ -18,7 +17,5 @@ function TimeAttackPage(props) {
     </article>
   )
 }
-
-TimeAttackPage.propTypes = {}
 
 export default TimeAttackPage
